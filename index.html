@@ -160,7 +160,7 @@ function hide() {
     function login(){
     const username = document.getElementById('userinput').value;
     const password = document.getElementById('passwordinput').value;
- const filtered_user =users.filter(user => user.userName ===username && password===password);
+ const filtered_user =users.filter(user => user.userName ===username && user.password===password);
 if(filtered_user.length > 0){
     alert('Login Successfull');
 }else{
